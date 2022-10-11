@@ -1,0 +1,31 @@
+cabal-version:      2.4
+name:               chapter10
+version:            0.1.0.0
+synopsis:
+
+-- A longer description of the package.
+-- description:
+homepage:
+
+-- A URL where users can report bugs.
+-- bug-reports:
+license:            NONE
+author:             Alejandro Serrano
+maintainer:         trupill@gmail.com
+
+-- A copyright notice.
+-- copyright:
+-- category:
+extra-source-files: CHANGELOG.md
+
+library
+    exposed-modules:  MyLib
+
+    -- Modules included in this library but not exported.
+    -- other-modules:
+
+    -- LANGUAGE extensions used by modules in this package.
+    -- other-extensions:
+    build-depends:    base, aeson >= 2, text, microlens-aeson, microlens, conduit, conduit-extra, bytestring
+    hs-source-dirs:   src
+    default-language: Haskell2010
